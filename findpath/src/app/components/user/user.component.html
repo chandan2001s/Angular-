@@ -1,0 +1,15 @@
+<p> {{name}} </p>
+
+<h4> Name: {{name.toUpperCase()}} </h4>
+
+<p>Showing a user input = {{userInput}} </p>
+
+<!-- //2 way data binding  -->
+<!-- <input type="text" [value]="userInput" (input)="Change($event)" > -->
+
+<!-- Another useCase of 2 way data Binding -  finding how this works -->
+
+<input type="text" [(ngModel)]= "userInput" >
+
+<button [disabled]="isbtndisabled">Click Me</button>
+
